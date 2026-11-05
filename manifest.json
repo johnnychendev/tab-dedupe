@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Dedupe (Ungrouped)",
+  "version": "1.0.0",
+  "description": "Switches to an already-open tab instead of opening a duplicate. Tabs inside tab groups are ignored.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

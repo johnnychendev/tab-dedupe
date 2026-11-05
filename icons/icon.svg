@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E3440"/>
+      <stop offset="1" stop-color="#171A21"/>
+    </linearGradient>
+    <!-- Browser tab silhouette: flared base, rounded top. 92 wide, 36 tall, origin at bottom-left. -->
+    <path id="tab" d="M0 0Q8 0 8-8V-26A10 10 0 0 1 18-36H74A10 10 0 0 1 84-26V-8Q84 0 92 0Z"/>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)"/>
+  <!-- Duplicate tab behind -->
+  <use href="#tab" transform="translate(22 73)" fill="#7C8CFF" fill-opacity="0.5"/>
+  <!-- The single tab that stays -->
+  <use href="#tab" transform="translate(14 91)" fill="#FFFFFF"/>
+</svg>
